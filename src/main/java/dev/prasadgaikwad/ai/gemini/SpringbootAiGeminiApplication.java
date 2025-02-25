@@ -13,17 +13,17 @@ public class SpringbootAiGeminiApplication {
 		SpringApplication.run(SpringbootAiGeminiApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner commandLineRunner(ChatClient.Builder builder) {
-		return args -> {
-			ChatClient client = builder.build();
-
-			String response = client.prompt()
-					.user("Tell me a programmer joke!")
-					.call()
-					.content();
-
-			System.out.println(response);
-		};
-	}
+//	@Bean
+//	CommandLineRunner commandLineRunner(ChatClient.Builder builder) {
+//		return args -> {
+//			ChatClient client = builder.build();
+//
+//			String response = client.prompt()
+//					.user("Tell me a programmer joke!")
+//					.call()
+//					.content();
+//
+//			System.out.println(response);
+//		};
+//	}
 }
